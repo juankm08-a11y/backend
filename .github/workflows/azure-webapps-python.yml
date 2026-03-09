@@ -48,6 +48,12 @@ jobs:
           python -m venv venv
           source venv/bin/activate
 
+      - name: Debug project structure
+        run: |
+          pwd 
+          ls 
+          ls backend
+
       - name: Install dependencies
         working-directory: ./backend
         run: |
