@@ -27,8 +27,7 @@ SECRET_KEY = 'django-insecure-$xkm$3ely_l-%ebil7h6-rsz(%sk(+8*2#j&vr#qs$qai2yur$
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    "localhost",
-    "127.0.0.1",
+    '*'
 ]
 
 
@@ -163,6 +162,7 @@ CSRF_TRUSTED_ORIGINS = [
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
 
 STATIC_URL = 'static/'
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 SIMPLE_JWT = {
     "ACCESS_TOKEN_LIFETIME": timedelta(minutes=15),
